@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery.min.js"></script>
+  </head>
+  <style>
+    body{
+      background: #f0f0f0;
+    }
+
+    .section {
+      font-size: 15px;
+    }
+
+    .section  p {
+      font-size: 40px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+    ul  {
+      list-style-type: none
+    }
+
+  </style>
+  <script type="text/javascript">
+    (function($){
+      $(document).ready(function(){
+        console.info('hi');
+        $('.menu li').hide();
+        $('.dropdown').on('click', function(){
+          $('.menu li').toggle();
+        });
+      })
+    })(jQuery)
+
+    document.write('hello world');
+    function sayHello(){
+      alert('hi');
+    }
+  </script>
+  <body>
+    <nav>
+      <a href="#">a1</a>
+      <a class="dropdown" href="#" class="a">A2</a>
+      <ul class=menu>
+        <li><a class="dropdown" href="#">1</a>
+          <ul class=menu>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+      </ul>
+    </nav>
+<div class="section">
+  <p>fdsfdsf</p>
+  <a href="javascript:void(document.write(“Hello : 0”))">Click me!</a>
+  <input type="button" onclick="sayHello()"  value="Say Hello">
+</div>
+
+<div class="section">
+  fdsfdsfds
+  <a href="#">a1</a>
+  <a href="#" class="a">A2</a>
+</div>
+  </body>
+</html>
